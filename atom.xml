@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[derod's Blog]]></title>
+  <title><![CDATA[sparkrico's Blog]]></title>
   <link href="http://sparkrico.github.com/atom.xml" rel="self"/>
   <link href="http://sparkrico.github.com/"/>
-  <updated>2012-10-17T21:38:37+08:00</updated>
+  <updated>2012-10-17T22:30:21+08:00</updated>
   <id>http://sparkrico.github.com/</id>
   <author>
     <name><![CDATA[sparkrico]]></name>
@@ -12,6 +12,24 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[meiguichuang]]></title>
+    <link href="http://sparkrico.github.com/blog/2012/10/17/meiguichuang/"/>
+    <updated>2012-10-17T22:27:00+08:00</updated>
+    <id>http://sparkrico.github.com/blog/2012/10/17/meiguichuang</id>
+    <content type="html"><![CDATA[<p><img src="http://sparkrico.github.com/images/meiguichuang.png" width="360" height="640"></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[kantu-weibo]]></title>
+    <link href="http://sparkrico.github.com/blog/2012/10/17/kantu-weibo/"/>
+    <updated>2012-10-17T22:14:00+08:00</updated>
+    <id>http://sparkrico.github.com/blog/2012/10/17/kantu-weibo</id>
+    <content type="html"><![CDATA[<p><img src="http://sparkrico.github.com/images/kantu.png" width="360" height="640"></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[hello world]]></title>
