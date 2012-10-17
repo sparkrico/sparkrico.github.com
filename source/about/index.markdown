@@ -6,7 +6,7 @@ comments: true
 sharing: true
 footer: true
 ---
-{% img http://en.gravatar.com/avatar/cd64aad7fcdcdbd7668028ee7fb72dc0.png?s=80 %}
-*	sparkrico
-*	beijing
-*	sparkrico@yahoo.com.cn
+{% img http://en.gravatar.com/avatar/cd64aad7fcdcdbd7668028ee7fb72dc0.png?s=80 %}<br/>
+Name:sparkrico<br/>
+City:BeiJing<br/>
+Mail:sparkrico@yahoo.com.cn
