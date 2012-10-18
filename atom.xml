@@ -4,11 +4,11 @@
   <title><![CDATA[sparkrico's Blog]]></title>
   <link href="http://sparkrico.github.com/atom.xml" rel="self"/>
   <link href="http://sparkrico.github.com/"/>
-  <updated>2012-10-18T10:25:54+08:00</updated>
+  <updated>2012-10-18T10:34:57+08:00</updated>
   <id>http://sparkrico.github.com/</id>
   <author>
     <name><![CDATA[sparkrico]]></name>
-    
+    <email><![CDATA[sparkrico@yahoo.com.cn]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
