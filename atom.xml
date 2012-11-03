@@ -4,7 +4,7 @@
   <title><![CDATA[sparkrico's Blog]]></title>
   <link href="http://sparkrico.github.com/atom.xml" rel="self"/>
   <link href="http://sparkrico.github.com/"/>
-  <updated>2012-11-04T01:10:02+08:00</updated>
+  <updated>2012-11-04T01:11:41+08:00</updated>
   <id>http://sparkrico.github.com/</id>
   <author>
     <name><![CDATA[sparkrico]]></name>
@@ -18,7 +18,7 @@
     <link href="http://sparkrico.github.com/blog/2012/10/17/meiguichuang/"/>
     <updated>2012-10-17T22:27:00+08:00</updated>
     <id>http://sparkrico.github.com/blog/2012/10/17/meiguichuang</id>
-    <content type="html"><![CDATA[<p><img src="http://sparkrico.github.com/images/meiguichuang.png" width="360" height="640"></p>
+    <content type="html"><![CDATA[<p><img src="http://sparkrico.github.com/images/meiguichuang.png"></p>
 ]]></content>
   </entry>
   
@@ -27,7 +27,7 @@
     <link href="http://sparkrico.github.com/blog/2012/10/17/kantu-weibo/"/>
     <updated>2012-10-17T22:14:00+08:00</updated>
     <id>http://sparkrico.github.com/blog/2012/10/17/kantu-weibo</id>
-    <content type="html"><![CDATA[<p><img src="http://sparkrico.github.com/images/kantu.png" width="360" height="640"></p>
+    <content type="html"><![CDATA[<p><img src="http://sparkrico.github.com/images/kantu.png"></p>
 ]]></content>
   </entry>
   
