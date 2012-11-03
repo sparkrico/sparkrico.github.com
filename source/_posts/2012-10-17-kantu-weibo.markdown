@@ -6,4 +6,4 @@ comments: true
 categories: 
 ---
 
-{% img /images/kantu.png 360 640%}
+{% img /images/kantu.png %}

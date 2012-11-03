@@ -6,4 +6,4 @@ comments: true
 categories: 
 ---
 
-{% img /images/meiguichuang.png 360 640%}
+{% img /images/meiguichuang.png %}
