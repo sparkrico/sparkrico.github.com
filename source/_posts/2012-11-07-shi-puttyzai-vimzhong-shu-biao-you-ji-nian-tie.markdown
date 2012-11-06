@@ -1,0 +1,18 @@
+---
+layout: post
+title: "使putty在vim中鼠标右击粘贴"
+date: 2012-11-07 00:24
+comments: true
+categories: [putty, tips] 
+---
+```bash 编辑~/.vimrc
+#找到下面的内容
+#if has('mouse')
+#   set mouse=a
+#endif
+
+#把 =a 修改为-=a
+if has('mouse')
+   set mouse -= a
+endif
+```

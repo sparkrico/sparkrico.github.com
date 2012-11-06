@@ -1,9 +1,11 @@
 ---
 layout: post
-title: "kantu-weibo"
+title: "微博看图"
 date: 2012-10-17 22:14
 comments: true
 categories: 
 ---
+以看图为主查看微博信息
 
-{% img /images/kantu.png 640 360%}
+<!-- more -->
+{% img /images/kantu.png %}

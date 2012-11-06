@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "..."
+title: "玫瑰窗"
 date: 2012-10-17 22:27
 comments: true
 categories: 
 ---
-
-{% img /images/meiguichuang.png 360 640%}
+玫瑰窗是专注于亲子阅读的网上图书馆。
+<!-- more -->
+{% img /images/meiguichuang.png %}

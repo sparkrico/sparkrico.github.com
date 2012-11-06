@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "meiguichuang"
+title: "玫瑰窗"
 date: 2012-10-17 22:27
 comments: true
-categories: 
+categories: [Android, screenshot, product] 
 ---
-
+玫瑰窗是专注于亲子阅读的网上图书馆。
+<!-- more -->
 {% img /images/meiguichuang.png %}
