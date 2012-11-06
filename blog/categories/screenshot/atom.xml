@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: screenshot | sparkrico's Blog]]></title>
+  <link href="http://sparkrico.github.com/blog/categories/screenshot/atom.xml" rel="self"/>
+  <link href="http://sparkrico.github.com/"/>
+  <updated>2012-11-07T00:43:36+08:00</updated>
+  <id>http://sparkrico.github.com/</id>
+  <author>
+    <name><![CDATA[sparkrico]]></name>
+    <email><![CDATA[sparkrico@yahoo.com.cn]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[玫瑰窗]]></title>
+    <link href="http://sparkrico.github.com/blog/2012/10/17/meiguichuang/"/>
+    <updated>2012-10-17T22:27:00+08:00</updated>
+    <id>http://sparkrico.github.com/blog/2012/10/17/meiguichuang</id>
+    <content type="html"><![CDATA[<p>玫瑰窗是专注于亲子阅读的网上图书馆。</p>
+
+<!-- more -->
+
+
+<p><img src="/images/meiguichuang.png"></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[微博看图]]></title>
+    <link href="http://sparkrico.github.com/blog/2012/10/17/kantu-weibo/"/>
+    <updated>2012-10-17T22:14:00+08:00</updated>
+    <id>http://sparkrico.github.com/blog/2012/10/17/kantu-weibo</id>
+    <content type="html"><![CDATA[<p>以看图为主查看微博信息</p>
+
+<!-- more -->
+
+
+<p><img src="/images/kantu.png"></p>
+]]></content>
+  </entry>
+  
+</feed>

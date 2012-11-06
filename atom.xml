@@ -4,7 +4,7 @@
   <title><![CDATA[sparkrico's Blog]]></title>
   <link href="http://sparkrico.github.com/atom.xml" rel="self"/>
   <link href="http://sparkrico.github.com/"/>
-  <updated>2012-11-04T01:11:41+08:00</updated>
+  <updated>2012-11-07T00:43:36+08:00</updated>
   <id>http://sparkrico.github.com/</id>
   <author>
     <name><![CDATA[sparkrico]]></name>
@@ -14,20 +14,207 @@
 
   
   <entry>
-    <title type="html"><![CDATA[meiguichuang]]></title>
-    <link href="http://sparkrico.github.com/blog/2012/10/17/meiguichuang/"/>
-    <updated>2012-10-17T22:27:00+08:00</updated>
-    <id>http://sparkrico.github.com/blog/2012/10/17/meiguichuang</id>
-    <content type="html"><![CDATA[<p><img src="http://sparkrico.github.com/images/meiguichuang.png"></p>
+    <title type="html"><![CDATA[使putty在vim中鼠标右击粘贴]]></title>
+    <link href="http://sparkrico.github.com/blog/2012/11/07/shi-puttyzai-vimzhong-shu-biao-you-ji-nian-tie/"/>
+    <updated>2012-11-07T00:24:00+08:00</updated>
+    <id>http://sparkrico.github.com/blog/2012/11/07/shi-puttyzai-vimzhong-shu-biao-you-ji-nian-tie</id>
+    <content type="html"><![CDATA[<figure class='code'><figcaption><span>编辑~/.vimrc</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="c">#找到下面的内容</span>
+</span><span class='line'><span class="c">#if has(&#39;mouse&#39;)</span>
+</span><span class='line'><span class="c">#   set mouse=a</span>
+</span><span class='line'><span class="c">#endif</span>
+</span><span class='line'>
+</span><span class='line'><span class="c">#把 =a 修改为-=a</span>
+</span><span class='line'><span class="k">if </span>has<span class="o">(</span><span class="s1">&#39;mouse&#39;</span><span class="o">)</span>
+</span><span class='line'>   <span class="nb">set </span>mouse -<span class="o">=</span> a
+</span><span class='line'>endif
+</span></code></pre></td></tr></table></div></figure>
+
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[kantu-weibo]]></title>
+    <title type="html"><![CDATA[Android Caching Bitmaps]]></title>
+    <link href="http://sparkrico.github.com/blog/2012/11/06/android-caching-bitmaps/"/>
+    <updated>2012-11-06T23:57:00+08:00</updated>
+    <id>http://sparkrico.github.com/blog/2012/11/06/android-caching-bitmaps</id>
+    <content type="html"><![CDATA[<figure class='code'><figcaption><span>setting up</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">private</span> <span class="n">LruCache</span> <span class="n">mMemoryCache</span><span class="o">;</span>
+</span><span class='line'><span class="nd">@Override</span>
+</span><span class='line'><span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>    <span class="o">...</span>
+</span><span class='line'>    <span class="c1">// Get memory class of this device, exceeding this amount will throw an</span>
+</span><span class='line'>    <span class="c1">// OutOfMemory exception.</span>
+</span><span class='line'>    <span class="kd">final</span> <span class="kt">int</span> <span class="n">memClass</span> <span class="o">=</span> <span class="o">((</span><span class="n">ActivityManager</span><span class="o">)</span> <span class="n">context</span><span class="o">.</span><span class="na">getSystemService</span><span class="o">(</span>
+</span><span class='line'>            <span class="n">Context</span><span class="o">.</span><span class="na">ACTIVITY_SERVICE</span><span class="o">)).</span><span class="na">getMemoryClass</span><span class="o">();</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1">// Use 1/8th of the available memory for this memory cache.</span>
+</span><span class='line'>    <span class="kd">final</span> <span class="kt">int</span> <span class="n">cacheSize</span> <span class="o">=</span> <span class="mi">1024</span> <span class="o">*</span> <span class="mi">1024</span> <span class="o">*</span> <span class="n">memClass</span> <span class="o">/</span> <span class="mi">8</span><span class="o">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">mMemoryCache</span> <span class="o">=</span> <span class="k">new</span> <span class="n">LruCache</span><span class="o">(</span><span class="n">cacheSize</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>        <span class="nd">@Override</span>
+</span><span class='line'>        <span class="kd">protected</span> <span class="kt">int</span> <span class="nf">sizeOf</span><span class="o">(</span><span class="n">String</span> <span class="n">key</span><span class="o">,</span> <span class="n">Bitmap</span> <span class="n">bitmap</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>            <span class="c1">// The cache size will be measured in bytes rather than number of items.</span>
+</span><span class='line'>            <span class="k">return</span> <span class="n">bitmap</span><span class="o">.</span><span class="na">getByteCount</span><span class="o">();</span>
+</span><span class='line'>        <span class="o">}</span>
+</span><span class='line'>    <span class="o">};</span>
+</span><span class='line'>    <span class="o">...</span>
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">public</span> <span class="kt">void</span> <span class="nf">addBitmapToMemoryCache</span><span class="o">(</span><span class="n">String</span> <span class="n">key</span><span class="o">,</span> <span class="n">Bitmap</span> <span class="n">bitmap</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>    <span class="k">if</span> <span class="o">(</span><span class="n">getBitmapFromMemCache</span><span class="o">(</span><span class="n">key</span><span class="o">)</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>        <span class="n">mMemoryCache</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">key</span><span class="o">,</span> <span class="n">bitmap</span><span class="o">);</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">public</span> <span class="n">Bitmap</span> <span class="nf">getBitmapFromMemCache</span><span class="o">(</span><span class="n">String</span> <span class="n">key</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">mMemoryCache</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">key</span><span class="o">);</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>loadBitmap</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">public</span> <span class="kt">void</span> <span class="nf">loadBitmap</span><span class="o">(</span><span class="kt">int</span> <span class="n">resId</span><span class="o">,</span> <span class="n">ImageView</span> <span class="n">imageView</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>    <span class="kd">final</span> <span class="n">String</span> <span class="n">imageKey</span> <span class="o">=</span> <span class="n">String</span><span class="o">.</span><span class="na">valueOf</span><span class="o">(</span><span class="n">resId</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="kd">final</span> <span class="n">Bitmap</span> <span class="n">bitmap</span> <span class="o">=</span> <span class="n">getBitmapFromMemCache</span><span class="o">(</span><span class="n">imageKey</span><span class="o">);</span>
+</span><span class='line'>    <span class="k">if</span> <span class="o">(</span><span class="n">bitmap</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>        <span class="n">mImageView</span><span class="o">.</span><span class="na">setImageBitmap</span><span class="o">(</span><span class="n">bitmap</span><span class="o">);</span>
+</span><span class='line'>    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+</span><span class='line'>        <span class="n">mImageView</span><span class="o">.</span><span class="na">setImageResource</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">image_placeholder</span><span class="o">);</span>
+</span><span class='line'>        <span class="n">BitmapWorkerTask</span> <span class="n">task</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BitmapWorkerTask</span><span class="o">(</span><span class="n">mImageView</span><span class="o">);</span>
+</span><span class='line'>        <span class="n">task</span><span class="o">.</span><span class="na">execute</span><span class="o">(</span><span class="n">resId</span><span class="o">);</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>asynctask</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">class</span> <span class="nc">BitmapWorkerTask</span> <span class="kd">extends</span> <span class="n">AsyncTask</span> <span class="o">{</span>
+</span><span class='line'>    <span class="o">...</span>
+</span><span class='line'>    <span class="c1">// Decode image in background.</span>
+</span><span class='line'>    <span class="nd">@Override</span>
+</span><span class='line'>    <span class="kd">protected</span> <span class="n">Bitmap</span> <span class="nf">doInBackground</span><span class="o">(</span><span class="n">Integer</span><span class="o">...</span> <span class="n">params</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>        <span class="kd">final</span> <span class="n">Bitmap</span> <span class="n">bitmap</span> <span class="o">=</span> <span class="n">decodeSampledBitmapFromResource</span><span class="o">(</span>
+</span><span class='line'>                <span class="n">getResources</span><span class="o">(),</span> <span class="n">params</span><span class="o">[</span><span class="mi">0</span><span class="o">],</span> <span class="mi">100</span><span class="o">,</span> <span class="mi">100</span><span class="o">));</span>
+</span><span class='line'>        <span class="n">addBitmapToMemoryCache</span><span class="o">(</span><span class="n">String</span><span class="o">.</span><span class="na">valueOf</span><span class="o">(</span><span class="n">params</span><span class="o">[</span><span class="mi">0</span><span class="o">]),</span> <span class="n">bitmap</span><span class="o">);</span>
+</span><span class='line'>        <span class="k">return</span> <span class="n">bitmap</span><span class="o">;</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'>    <span class="o">...</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[使putty支持中文的输入和显示]]></title>
+    <link href="http://sparkrico.github.com/blog/2012/11/06/shi-puttyzhi-chi-zhong-wen-de-shu-ru-he-xian-shi/"/>
+    <updated>2012-11-06T23:34:00+08:00</updated>
+    <id>http://sparkrico.github.com/blog/2012/11/06/shi-puttyzhi-chi-zhong-wen-de-shu-ru-he-xian-shi</id>
+    <content type="html"><![CDATA[<ol>
+<li>启动putty</li>
+<li>Category中选择Window - Appearance - Font settings - Font 
+中选择Fixedsys字体,
+字符集选择CHINESE_GB2312</li>
+<li>Category中选择Window - Appearance - Translation - Character set translation中Remote character set设置为UTF-8</li>
+<li>在shell中输入export LC_ALL=&#8217;zh_CN.utf8&#8217;</li>
+</ol>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[玫瑰窗]]></title>
+    <link href="http://sparkrico.github.com/blog/2012/10/17/meiguichuang/"/>
+    <updated>2012-10-17T22:27:00+08:00</updated>
+    <id>http://sparkrico.github.com/blog/2012/10/17/meiguichuang</id>
+    <content type="html"><![CDATA[<p>玫瑰窗是专注于亲子阅读的网上图书馆。</p>
+
+<!-- more -->
+
+
+<p><img src="http://sparkrico.github.com/images/meiguichuang.png"></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[微博看图]]></title>
     <link href="http://sparkrico.github.com/blog/2012/10/17/kantu-weibo/"/>
     <updated>2012-10-17T22:14:00+08:00</updated>
     <id>http://sparkrico.github.com/blog/2012/10/17/kantu-weibo</id>
-    <content type="html"><![CDATA[<p><img src="http://sparkrico.github.com/images/kantu.png"></p>
+    <content type="html"><![CDATA[<p>以看图为主查看微博信息</p>
+
+<!-- more -->
+
+
+<p><img src="http://sparkrico.github.com/images/kantu.png"></p>
 ]]></content>
   </entry>
   

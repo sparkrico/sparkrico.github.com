@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: tips | sparkrico's Blog]]></title>
+  <link href="http://sparkrico.github.com/blog/categories/tips/atom.xml" rel="self"/>
+  <link href="http://sparkrico.github.com/"/>
+  <updated>2012-11-07T00:43:36+08:00</updated>
+  <id>http://sparkrico.github.com/</id>
+  <author>
+    <name><![CDATA[sparkrico]]></name>
+    <email><![CDATA[sparkrico@yahoo.com.cn]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[使putty在vim中鼠标右击粘贴]]></title>
+    <link href="http://sparkrico.github.com/blog/2012/11/07/shi-puttyzai-vimzhong-shu-biao-you-ji-nian-tie/"/>
+    <updated>2012-11-07T00:24:00+08:00</updated>
+    <id>http://sparkrico.github.com/blog/2012/11/07/shi-puttyzai-vimzhong-shu-biao-you-ji-nian-tie</id>
+    <content type="html"><![CDATA[<p>```bash 编辑~/.vimrc</p>
+
+<h1>找到下面的内容</h1>
+
+<h1>if has('mouse')</h1>
+
+<h1>set mouse=a</h1>
+
+<h1>endif</h1>
+
+<h1>把 =a 修改为-=a</h1>
+
+<p>if has('mouse')
+   set mouse -= a
+endif
+```</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[使putty支持中文的输入和显示]]></title>
+    <link href="http://sparkrico.github.com/blog/2012/11/06/shi-puttyzhi-chi-zhong-wen-de-shu-ru-he-xian-shi/"/>
+    <updated>2012-11-06T23:34:00+08:00</updated>
+    <id>http://sparkrico.github.com/blog/2012/11/06/shi-puttyzhi-chi-zhong-wen-de-shu-ru-he-xian-shi</id>
+    <content type="html"><![CDATA[<ol>
+<li>启动putty</li>
+<li>Category中选择Window - Appearance - Font settings - Font 
+中选择Fixedsys字体,
+字符集选择CHINESE_GB2312</li>
+<li>Category中选择Window - Appearance - Translation - Character set translation中Remote character set设置为UTF-8</li>
+<li>在shell中输入export LC_ALL='zh_CN.utf8'</li>
+</ol>
+
+
+
+]]></content>
+  </entry>
+  
+</feed>

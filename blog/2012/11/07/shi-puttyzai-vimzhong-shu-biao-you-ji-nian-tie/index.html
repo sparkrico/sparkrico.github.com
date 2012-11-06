@@ -5,11 +5,25 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html xmlns:wb="http://open.weibo.com/wb" class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>微博看图 - sparkrico's Blog</title>
+  <title>使putty在vim中鼠标右击粘贴 - sparkrico's Blog</title>
   <meta name="author" content="sparkrico">
 
   
-  <meta name="description" content="以看图为主查看微博信息 ">
+  <meta name="description" content="编辑~/.vimrc1
+2
+3
+4
+5
+6
+7
+8
+9
+#找到下面的内容
+#if has(&#39;mouse&#39;)
+# set mouse=a
+#endif #把 =a 修改为-=a
+if has(&#39;mouse&#39;) set mouse -= a
+endif ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +32,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://sparkrico.github.com/blog/2012/10/17/kantu-weibo/">
+  <link rel="canonical" href="http://sparkrico.github.com/blog/2012/11/07/shi-puttyzai-vimzhong-shu-biao-you-ji-nian-tie/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -83,7 +97,7 @@
   
   <header>
     
-      <h1 class="entry-title">微博看图</h1>
+      <h1 class="entry-title">使putty在vim中鼠标右击粘贴</h1>
     
     
       <p class="meta">
@@ -99,19 +113,33 @@
   
 
 
-<time datetime="2012-10-17T22:14:00+08:00" pubdate data-updated="true">Oct 17<span>th</span>, 2012</time>
+<time datetime="2012-11-07T00:24:00+08:00" pubdate data-updated="true">Nov 7<span>th</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>以看图为主查看微博信息</p>
+<div class="entry-content"><figure class='code'><figcaption><span>编辑~/.vimrc</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="c">#找到下面的内容</span>
+</span><span class='line'><span class="c">#if has(&#39;mouse&#39;)</span>
+</span><span class='line'><span class="c">#   set mouse=a</span>
+</span><span class='line'><span class="c">#endif</span>
+</span><span class='line'>
+</span><span class='line'><span class="c">#把 =a 修改为-=a</span>
+</span><span class='line'><span class="k">if </span>has<span class="o">(</span><span class="s1">&#39;mouse&#39;</span><span class="o">)</span>
+</span><span class='line'>   <span class="nb">set </span>mouse -<span class="o">=</span> a
+</span><span class='line'>endif
+</span></code></pre></td></tr></table></div></figure>
 
-<!-- more -->
-
-
-<p><img src="/images/kantu.png"></p>
 </div>
 
 
@@ -134,12 +162,12 @@
   
 
 
-<time datetime="2012-10-17T22:14:00+08:00" pubdate data-updated="true">Oct 17<span>th</span>, 2012</time>
+<time datetime="2012-11-07T00:24:00+08:00" pubdate data-updated="true">Nov 7<span>th</span>, 2012</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/android/'>Android</a>, <a class='category' href='/blog/categories/product/'>product</a>, <a class='category' href='/blog/categories/screenshot/'>screenshot</a>
+    <a class='category' href='/blog/categories/putty/'>putty</a>, <a class='category' href='/blog/categories/tips/'>tips</a>
   
 </span>
 
@@ -148,7 +176,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://sparkrico.github.com/blog/2012/10/17/kantu-weibo/" data-via="" data-counturl="http://sparkrico.github.com/blog/2012/10/17/kantu-weibo/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://sparkrico.github.com/blog/2012/11/07/shi-puttyzai-vimzhong-shu-biao-you-ji-nian-tie/" data-via="" data-counturl="http://sparkrico.github.com/blog/2012/11/07/shi-puttyzai-vimzhong-shu-biao-you-ji-nian-tie/" >Tweet</a>
   
   
   
@@ -157,10 +185,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/10/17/hello-world/" title="Previous Post: hello world">&laquo; hello world</a>
+        <a class="basic-alignment left" href="/blog/2012/11/06/android-caching-bitmaps/" title="Previous Post: Android Caching Bitmaps">&laquo; Android Caching Bitmaps</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2012/10/17/meiguichuang/" title="Next Post: 玫瑰窗">玫瑰窗 &raquo;</a>
       
     </p>
   </footer>

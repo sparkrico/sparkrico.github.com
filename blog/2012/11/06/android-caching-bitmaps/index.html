@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html xmlns:wb="http://open.weibo.com/wb" class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>sparkrico's Blog</title>
+  <title>Android Caching Bitmaps - sparkrico's Blog</title>
   <meta name="author" content="sparkrico">
 
   
-  <meta name="description" content="编辑~/.vimrc1
+  <meta name="description" content="setting up1
 2
 3
 4
@@ -18,12 +18,31 @@
 7
 8
 9
-#找到下面的内容
-#if has(&#39;mouse&#39;)
-# set mouse=a
-#endif #把 =a 修改为-=a
-if has(&#39;mouse&#39;) set mouse -= a
-endif ">
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+private LruCache mMemoryCache;
+@Override
+protected void &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -32,7 +51,7 @@ endif ">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://sparkrico.github.com/">
+  <link rel="canonical" href="http://sparkrico.github.com/blog/2012/11/06/android-caching-bitmaps/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -92,70 +111,12 @@ endif ">
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2012/11/07/shi-puttyzai-vimzhong-shu-biao-you-ji-nian-tie/">使putty在vim中鼠标右击粘贴</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-11-07T00:24:00+08:00" pubdate data-updated="true">Nov 7<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><figure class='code'><figcaption><span>编辑~/.vimrc</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="c">#找到下面的内容</span>
-</span><span class='line'><span class="c">#if has(&#39;mouse&#39;)</span>
-</span><span class='line'><span class="c">#   set mouse=a</span>
-</span><span class='line'><span class="c">#endif</span>
-</span><span class='line'>
-</span><span class='line'><span class="c">#把 =a 修改为-=a</span>
-</span><span class='line'><span class="k">if </span>has<span class="o">(</span><span class="s1">&#39;mouse&#39;</span><span class="o">)</span>
-</span><span class='line'>   <span class="nb">set </span>mouse -<span class="o">=</span> a
-</span><span class='line'>endif
-</span></code></pre></td></tr></table></div></figure>
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/11/06/android-caching-bitmaps/">Android Caching Bitmaps</a></h1>
+      <h1 class="entry-title">Android Caching Bitmaps</h1>
     
     
       <p class="meta">
@@ -178,7 +139,7 @@ endif ">
   </header>
 
 
-  <div class="entry-content"><figure class='code'><figcaption><span>setting up</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<div class="entry-content"><figure class='code'><figcaption><span>setting up</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -301,68 +262,16 @@ endif ">
 </span></code></pre></td></tr></table></div></figure>
 
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/11/06/shi-puttyzhi-chi-zhong-wen-de-shu-ru-he-xian-shi/">使putty支持中文的输入和显示</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
   
 
+<span class="byline author vcard">Posted by <span class="fn">sparkrico</span></span>
 
-<time datetime="2012-11-06T23:34:00+08:00" pubdate data-updated="true">Nov 6<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><ol>
-<li>启动putty</li>
-<li>Category中选择Window - Appearance - Font settings - Font 
-中选择Fixedsys字体,
-字符集选择CHINESE_GB2312</li>
-<li>Category中选择Window - Appearance - Translation - Character set translation中Remote character set设置为UTF-8</li>
-<li>在shell中输入export LC_ALL=&#8217;zh_CN.utf8&#8217;</li>
-</ol>
-
-
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/10/17/meiguichuang/">玫瑰窗</a></h1>
-    
-    
-      <p class="meta">
-        
 
 
 
@@ -374,109 +283,40 @@ endif ">
   
 
 
-<time datetime="2012-10-17T22:27:00+08:00" pubdate data-updated="true">Oct 17<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>玫瑰窗是专注于亲子阅读的网上图书馆。</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2012/10/17/meiguichuang/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
+<time datetime="2012-11-06T23:57:00+08:00" pubdate data-updated="true">Nov 6<span>th</span>, 2012</time>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/10/17/kantu-weibo/">微博看图</a></h1>
-    
-    
-      <p class="meta">
-        
 
-
-
-
-
-
-
-
+<span class="categories">
   
+    <a class='category' href='/blog/categories/android/'>Android</a>, <a class='category' href='/blog/categories/cache/'>Cache</a>, <a class='category' href='/blog/categories/bitmap/'>bitmap</a>
+  
+</span>
 
 
-<time datetime="2012-10-17T22:14:00+08:00" pubdate data-updated="true">Oct 17<span>th</span>, 2012</time>
-        
-      </p>
+    </p>
     
-  </header>
-
-
-  <div class="entry-content"><p>以看图为主查看微博信息</p>
-
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://sparkrico.github.com/blog/2012/11/06/android-caching-bitmaps/" data-via="" data-counturl="http://sparkrico.github.com/blog/2012/11/06/android-caching-bitmaps/" >Tweet</a>
+  
+  
+  
 </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2012/10/17/kantu-weibo/">Read on &rarr;</a>
-    </footer>
-  
 
-
-    </article>
-  
-  
-    <article>
+    
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/10/17/hello-world/">Hello World</a></h1>
-    
-    
-      <p class="meta">
-        
+        <a class="basic-alignment left" href="/blog/2012/11/06/shi-puttyzhi-chi-zhong-wen-de-shu-ru-he-xian-shi/" title="Previous Post: 使putty支持中文的输入和显示">&laquo; 使putty支持中文的输入和显示</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2012/11/07/shi-puttyzai-vimzhong-shu-biao-you-ji-nian-tie/" title="Next Post: 使putty在vim中鼠标右击粘贴">使putty在vim中鼠标右击粘贴 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
 
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-10-17T21:26:00+08:00" pubdate data-updated="true">Oct 17<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content">
 </div>
-  
-  
 
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
 <aside class="sidebar">
   
     <section>
@@ -518,6 +358,7 @@ endif ">
 
   
 </aside>
+
 
     </div>
   </div>
