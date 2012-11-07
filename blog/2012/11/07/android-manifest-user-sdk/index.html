@@ -5,11 +5,14 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html xmlns:wb="http://open.weibo.com/wb" class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: Cache - sparkrico's Blog</title>
+  <title>Android Manifest uses-sdk - sparkrico's Blog</title>
   <meta name="author" content="sparkrico">
 
   
-  <meta name="description" content="Category: Cache">
+  <meta name="description" content="syntax1
+2
+3
+&lt;uses-sdk android:minSdkVersion=&quot;integer&quot; android:targetSdkVersion=&quot;integer&quot; android:maxSdkVersion=&quot;integer& &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +21,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://sparkrico.github.comblog/categories/cache/">
+  <link rel="canonical" href="http://sparkrico.github.com/blog/2012/11/07/android-manifest-user-sdk/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -79,35 +82,100 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: Cache</h1>
+    
+      <h1 class="entry-title">Android Manifest Uses-sdk</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-11-07T21:44:00+08:00" pubdate data-updated="true">Nov 7<span>th</span>, 2012</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
-
-  
-  <h2>2012</h2>
-
-<article>
-  
-<h1><a href="/blog/2012/11/06/android-caching-bitmaps/">Android Caching Bitmaps</a></h1>
-<time datetime="2012-11-06T23:57:00+08:00" pubdate><span class='month'>Nov</span> <span class='day'>06</span> <span class='year'>2012</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/android/'>Android</a>, <a class='category' href='/blog/categories/cache/'>Cache</a>, <a class='category' href='/blog/categories/bitmap/'>bitmap</a></span>
-</footer>
+<div class="entry-content"><figure class='code'><figcaption><span>syntax</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="o">&lt;</span><span class="n">uses</span><span class="o">-</span><span class="n">sdk</span> <span class="nl">android:</span><span class="n">minSdkVersion</span><span class="o">=</span><span class="s">&quot;integer&quot;</span>
+</span><span class='line'>          <span class="nl">android:</span><span class="n">targetSdkVersion</span><span class="o">=</span><span class="s">&quot;integer&quot;</span>
+</span><span class='line'>          <span class="nl">android:</span><span class="n">maxSdkVersion</span><span class="o">=</span><span class="s">&quot;integer&quot;</span> <span class="o">/&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
 
 
-</article>
+<ol>
+<li>如果设定了minSdkVersion，小于minSdkVersion的系统将无法在谷歌市场检索到该应用。如果没有设置，则认为它是1</li>
+<li>如果没有设置targetSdkVersion则认为他和minSdkVersion相等。</li>
+</ol>
+
+
+<p>遇到一个问题，使用4.1.2作为targetSdkVersion在我的4.1.2系统上Menu无论如何都出不来（未使用ActionBar），换为2.2后就出来了</p>
 
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">sparkrico</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-11-07T21:44:00+08:00" pubdate data-updated="true">Nov 7<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/android/'>Android</a>, <a class='category' href='/blog/categories/guide/'>guide</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://sparkrico.github.com/blog/2012/11/07/android-manifest-user-sdk/" data-via="sparkrico" data-counturl="http://sparkrico.github.com/blog/2012/11/07/android-manifest-user-sdk/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/11/07/shi-puttyzai-vimzhong-shu-biao-you-ji-nian-tie/" title="Previous Post: 使putty在vim中鼠标右击粘贴">&laquo; 使putty在vim中鼠标右击粘贴</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>

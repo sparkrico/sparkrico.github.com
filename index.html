@@ -9,21 +9,10 @@
   <meta name="author" content="sparkrico">
 
   
-  <meta name="description" content="编辑~/.vimrc1
+  <meta name="description" content="syntax1
 2
 3
-4
-5
-6
-7
-8
-9
-#找到下面的内容
-#if has(&#39;mouse&#39;)
-# set mouse=a
-#endif #把 =a 修改为-=a
-if has(&#39;mouse&#39;) set mouse -= a
-endif ">
+&lt;uses-sdk android:minSdkVersion=&quot;integer&quot; android:targetSdkVersion=&quot;integer&quot; android:maxSdkVersion=&quot;integer& &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,7 +55,7 @@ endif ">
   <header role="banner"><hgroup>
   <h1><a href="/">sparkrico's Blog</a></h1>
   
-    <h2>A blogging framework for hackers.</h2>
+    <h2>Android Development</h2>
   
 </hgroup>
 
@@ -94,6 +83,58 @@ endif ">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/11/07/android-manifest-user-sdk/">Android Manifest Uses-sdk</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-11-07T21:44:00+08:00" pubdate data-updated="true">Nov 7<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><figure class='code'><figcaption><span>syntax</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="o">&lt;</span><span class="n">uses</span><span class="o">-</span><span class="n">sdk</span> <span class="nl">android:</span><span class="n">minSdkVersion</span><span class="o">=</span><span class="s">&quot;integer&quot;</span>
+</span><span class='line'>          <span class="nl">android:</span><span class="n">targetSdkVersion</span><span class="o">=</span><span class="s">&quot;integer&quot;</span>
+</span><span class='line'>          <span class="nl">android:</span><span class="n">maxSdkVersion</span><span class="o">=</span><span class="s">&quot;integer&quot;</span> <span class="o">/&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>如果设定了minSdkVersion，小于minSdkVersion的系统将无法在谷歌市场检索到该应用。如果没有设置，则认为它是1</li>
+<li>如果没有设置targetSdkVersion则认为他和minSdkVersion相等。</li>
+</ol>
+
+
+<p>遇到一个问题，使用4.1.2作为targetSdkVersion在我的4.1.2系统上Menu无论如何都出不来（未使用ActionBar），换为2.2后就出来了</p>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -484,6 +525,10 @@ endif ">
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/11/07/android-manifest-user-sdk/">Android Manifest uses-sdk</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/11/07/shi-puttyzai-vimzhong-shu-biao-you-ji-nian-tie/">使putty在vim中鼠标右击粘贴</a>
       </li>
     
@@ -499,22 +544,64 @@ endif ">
         <a href="/blog/2012/10/17/meiguichuang/">玫瑰窗</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2012/10/17/kantu-weibo/">微博看图</a>
-      </li>
-    
   </ul>
-  <ul>
-  <li><wb:follow-button uid="1063044885" type="red_1" width="67" height="24" ></wb:follow-button></li>
-  <li><script type="text/javascript" src="http://www.xiami.com/widget/player-multi?uid=1767074&sid=150829,1769776436,1771004796,1770177060,3320597,2089217,189065,1769899857,1770409076,1306605,2120174,1770121488,3604175,3464928,1769476197,1117320,2130679,&width=252&height=586&mainColor=FF8719&backColor=494949&autoplay=1&mode=js"></script></li>
-  <li><a href="http://www.yinxiang.com" target="_blank"><img src="/images/logo_yx.png"/></a></li>
-  <li><a href="http://developer.android.com" target="_blank"><img src="/images/logo_android.png"/></a></li>
-  <li><a href="https://github.com" target="_blank"><img src="/images/logo_github.png"/></a></li>
+</section>
+
+<section>
+<h1>分類</h1>
+<ul>
+  <li><a href='/blog/categories/android'>Android (4)</a></li>
+  <li><a href='/blog/categories/bitmap'>Bitmap (1)</a></li>
+  <li><a href='/blog/categories/cache'>Cache (1)</a></li>
+  <li><a href='/blog/categories/guide'>Guide (1)</a></li>
+  <li><a href='/blog/categories/product'>Product (2)</a></li>
+  <li><a href='/blog/categories/putty'>Putty (2)</a></li>
+  <li><a href='/blog/categories/screenshot'>Screenshot (2)</a></li>
+  <li><a href='/blog/categories/tips'>Tips (2)</a></li>
+</ul>
+</section>
+
+<section>
+<script type="text/javascript" src="http://www.xiami.com/widget/player-multi?uid=1767074&sid=150829,1769776436,1771004796,1770177060,3320597,2089217,189065,1769899857,1770409076,1306605,2120174,1770121488,3604175,3464928,1769476197,1117320,2130679,&width=252&height=586&mainColor=FF8719&backColor=494949&autoplay=1&mode=js"></script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating&#8230;</li>
   </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("sparkrico", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/sparkrico" class="twitter-follow-button" data-show-count="false">Follow @sparkrico</a>
+  
+</section>
 
 
 
 
+<section>
+<ul>
+		<li><wb:follow-button uid="1063044885" type="red_1" width="67" height="24" ></wb:follow-button></li>
+		<li><a href="http://www.yinxiang.com" target="_blank"><img src="/images/logo_yx.png"/></a></li>
+		<li><a href="https://github.com" target="_blank"><img src="/images/logo_github.png"/></a></li>
+		<li><a href="http://developer.android.com" target="_blank"><img src="/images/logo_android.png"/></a></li>
+</ul>
+		</section>
+<section>
+<ul>
+		<li><a href="http://huacnlee.com" target="_blank">李华顺</a></li>
+		<li><a href="http://ihower.tw" target="_blank">ihower</a></li>
+		<li><a href="http://blog.xdite.net" target="_blank">XDite</a></li>
+		<li><a href="http://blog.yorkin.org" target="_blank">Yorkxin</a></li>
+		<li><a href="http://blog.eddie.com.tw" target="_blank">Eddie</a></li>
+</ul>
+</section>
 
   
 </aside>

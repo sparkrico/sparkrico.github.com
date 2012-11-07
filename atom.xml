@@ -4,7 +4,7 @@
   <title><![CDATA[sparkrico's Blog]]></title>
   <link href="http://sparkrico.github.com/atom.xml" rel="self"/>
   <link href="http://sparkrico.github.com/"/>
-  <updated>2012-11-07T00:43:36+08:00</updated>
+  <updated>2012-11-07T23:41:56+08:00</updated>
   <id>http://sparkrico.github.com/</id>
   <author>
     <name><![CDATA[sparkrico]]></name>
@@ -12,6 +12,31 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Android Manifest uses-sdk]]></title>
+    <link href="http://sparkrico.github.com/blog/2012/11/07/android-manifest-user-sdk/"/>
+    <updated>2012-11-07T21:44:00+08:00</updated>
+    <id>http://sparkrico.github.com/blog/2012/11/07/android-manifest-user-sdk</id>
+    <content type="html"><![CDATA[<figure class='code'><figcaption><span>syntax</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="o">&lt;</span><span class="n">uses</span><span class="o">-</span><span class="n">sdk</span> <span class="nl">android:</span><span class="n">minSdkVersion</span><span class="o">=</span><span class="s">&quot;integer&quot;</span>
+</span><span class='line'>          <span class="nl">android:</span><span class="n">targetSdkVersion</span><span class="o">=</span><span class="s">&quot;integer&quot;</span>
+</span><span class='line'>          <span class="nl">android:</span><span class="n">maxSdkVersion</span><span class="o">=</span><span class="s">&quot;integer&quot;</span> <span class="o">/&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>如果设定了minSdkVersion，小于minSdkVersion的系统将无法在谷歌市场检索到该应用。如果没有设置，则认为它是1</li>
+<li>如果没有设置targetSdkVersion则认为他和minSdkVersion相等。</li>
+</ol>
+
+
+<p>遇到一个问题，使用4.1.2作为targetSdkVersion在我的4.1.2系统上Menu无论如何都出不来（未使用ActionBar），换为2.2后就出来了</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[使putty在vim中鼠标右击粘贴]]></title>
