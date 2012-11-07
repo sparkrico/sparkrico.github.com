@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Android Manifest <uses-sdk>"
+date: 2012-11-07 21:44
+comments: true
+categories: [Android, guide]
+---
+
+```java syntax
+<uses-sdk android:minSdkVersion="integer" 
+          android:targetSdkVersion="integer"
+          android:maxSdkVersion="integer" />
+```
+<ol>
+<li>如果设定了minSdkVersion，小于min的系统将无法在谷歌市场检索到该应用。如果没有设置，默认为1</li>
+
+
+</ol>
