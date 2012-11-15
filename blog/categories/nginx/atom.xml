@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: nginx | sparkrico's Blog]]></title>
+  <link href="http://sparkrico.github.com/blog/categories/nginx/atom.xml" rel="self"/>
+  <link href="http://sparkrico.github.com/"/>
+  <updated>2012-11-15T23:35:36+08:00</updated>
+  <id>http://sparkrico.github.com/</id>
+  <author>
+    <name><![CDATA[sparkrico]]></name>
+    <email><![CDATA[sparkrico@yahoo.com.cn]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[nginx started]]></title>
+    <link href="http://sparkrico.github.com/blog/2012/11/15/nginx-started/"/>
+    <updated>2012-11-15T23:27:00+08:00</updated>
+    <id>http://sparkrico.github.com/blog/2012/11/15/nginx-started</id>
+    <content type="html"><![CDATA[<p>nginx 403</p>
+
+<p>change user www-data; to user xxxx;</p>
+
+<p>/etc/nginc/nginx.conf
+```</p>
+
+<h1>user www-data;</h1>
+
+<p>user xxxx;
+```</p>
+
+<p>alias:Defines a replacement for the specified location. For example, with the following configuration
+```
+location /i/ {</p>
+
+<pre><code>alias /data/w3/images/;
+</code></pre>
+
+<p>}
+```
+the request of “/i/top.gif” will be responded with the file /data/w3/images/top.gif.</p>
+]]></content>
+  </entry>
+  
+</feed>

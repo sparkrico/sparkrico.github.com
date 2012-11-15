@@ -4,7 +4,7 @@
   <title><![CDATA[sparkrico's Blog]]></title>
   <link href="http://sparkrico.github.com/atom.xml" rel="self"/>
   <link href="http://sparkrico.github.com/"/>
-  <updated>2012-11-07T23:46:15+08:00</updated>
+  <updated>2012-11-15T23:35:36+08:00</updated>
   <id>http://sparkrico.github.com/</id>
   <author>
     <name><![CDATA[sparkrico]]></name>
@@ -12,6 +12,37 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[nginx started]]></title>
+    <link href="http://sparkrico.github.com/blog/2012/11/15/nginx-started/"/>
+    <updated>2012-11-15T23:27:00+08:00</updated>
+    <id>http://sparkrico.github.com/blog/2012/11/15/nginx-started</id>
+    <content type="html"><![CDATA[<p>nginx 403</p>
+
+<p>change user www-data; to user xxxx;</p>
+
+<p>/etc/nginc/nginx.conf</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>#user www-data;
+</span><span class='line'>user xxxx;</span></code></pre></td></tr></table></div></figure>
+
+
+<p>alias:Defines a replacement for the specified location. For example, with the following configuration</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>location /i/ {
+</span><span class='line'>    alias /data/w3/images/;
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>the request of “/i/top.gif” will be responded with the file /data/w3/images/top.gif.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Android Manifest uses-sdk]]></title>

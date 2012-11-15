@@ -9,10 +9,10 @@
   <meta name="author" content="sparkrico">
 
   
-  <meta name="description" content="syntax1
+  <meta name="description" content="nginx 403 change user www-data; to user xxxx; /etc/nginc/nginx.conf 1
 2
-3
-&lt;uses-sdk android:minSdkVersion=&quot;integer&quot; android:targetSdkVersion=&quot;integer&quot; android:maxSdkVersion=&quot;integer& &hellip;">
+#user www-data;
+user xxxx; alias:Defines a replacement for the specified &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -83,6 +83,64 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/11/15/nginx-started/">Nginx Started</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-11-15T23:27:00+08:00" pubdate data-updated="true">Nov 15<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>nginx 403</p>
+
+<p>change user www-data; to user xxxx;</p>
+
+<p>/etc/nginc/nginx.conf</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>#user www-data;
+</span><span class='line'>user xxxx;</span></code></pre></td></tr></table></div></figure>
+
+
+<p>alias:Defines a replacement for the specified location. For example, with the following configuration</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>location /i/ {
+</span><span class='line'>    alias /data/w3/images/;
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>the request of “/i/top.gif” will be responded with the file /data/w3/images/top.gif.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -525,6 +583,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/11/15/nginx-started/">nginx started</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/11/07/android-manifest-user-sdk/">Android Manifest uses-sdk</a>
       </li>
     
@@ -538,10 +600,6 @@
     
       <li class="post">
         <a href="/blog/2012/11/06/shi-puttyzhi-chi-zhong-wen-de-shu-ru-he-xian-shi/">使putty支持中文的输入和显示</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/10/17/meiguichuang/">玫瑰窗</a>
       </li>
     
   </ul>
