@@ -1,0 +1,28 @@
+---
+layout: post
+title: "nginx started"
+date: 2012-11-15 23:27
+comments: true
+categories: [nginx]
+---
+recently developer.android.com visit difficult, so i put android docs to my rent clode server;
+
+
+
+nginx 403
+
+change user www-data; to user xxxx;
+
+/etc/nginc/nginx.conf
+``` 
+#user www-data;
+user xxxx;
+```
+
+alias:Defines a replacement for the specified location. For example, with the following configuration
+```
+location /i/ {
+    alias /data/w3/images/;
+}
+```
+the request of “/i/top.gif” will be responded with the file /data/w3/images/top.gif.
